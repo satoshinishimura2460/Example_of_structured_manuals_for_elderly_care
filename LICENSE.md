@@ -1,4 +1,4 @@
-Example_of_structured_manuals_for_elderly_care  Terms of use
+## Example_of_structured_manuals_for_elderly_care  Terms of use
 
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 
