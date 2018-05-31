@@ -130,3 +130,4 @@ SELECT ?ActionLabel
   
 		filter regex(?Actor, "利用者")  
 }  
+
