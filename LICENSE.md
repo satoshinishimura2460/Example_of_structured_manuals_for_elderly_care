@@ -18,7 +18,7 @@ The data-set is provided "as is", without warranty of any kind, express or impli
 初任者研修テキストブック編集委員会(編集), 介護職員初任者研修テキスト,ミネルヴァ書房, (2016)  
 社団法人日本介護福祉士養成施設協会, 介護福祉国家試験・実技試験免除のための介護技術講習テキスト, (2005)  
 
-### Contact
+### Creator
 Satoshi Nishimura and Service Intelligence Research Team,  
 Artificial Intelligence Research Center,  
 National Institute of Advanced Industrial Science and Technology, Japan
