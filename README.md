@@ -6,7 +6,7 @@
 例えば  
 <行為>：〔角の取れた長方形〕〔名詞+動詞〕の形式で記述する<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/unit_of_action.png>  
 <実行する人>：〔橙色の四角〕 配置：<行為>の左上<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/actor.png>  
-<目的が達成されるという関係>：〔縦線〕 配置：<行為>と<行為>の間<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/structure_of_action.png>  
+<目的が達成されるという関係>：〔縦線〕 配置：<行為>と<行為>の間<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/structure_of_actions.png>  
 などの図形で表現する
 
 ## 介護における構造化マニュアルの例
