@@ -60,7 +60,7 @@ Aと[3][4][5]及び当チームの介護専門家の経験をもとに，介護�
 	* その際には，Property, Classを追加，削除，変更を行う．
 
 ## （参考）SPARQLクエリ例
-'''
+'''sparql
 ///ルートノード検索///
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
