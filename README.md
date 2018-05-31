@@ -2,11 +2,11 @@
 介護の構造化マニュアルの例
 
 ## 構造化マニュアルとは
-達成したい目的に向けて必要な行為とその関係を整理し、線や四角などの図形を用いて表現した業務手順書である。
-例えば
-<行為>：〔角の取れた長方形〕〔名詞+動詞〕の形式で記述する
-<実行する人>：〔橙色の四角〕 配置：<行為>の左上
-<目的が達成されるという関係>：〔縦線〕 配置：<行為>と<行為>の間
+達成したい目的に向けて必要な行為とその関係を整理し、線や四角などの図形を用いて表現した業務手順書である。  
+例えば  
+<行為>：〔角の取れた長方形〕〔名詞+動詞〕の形式で記述する<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/unit_of_action.png>  
+<実行する人>：〔橙色の四角〕 配置：<行為>の左上<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/actor.png>  
+<目的が達成されるという関係>：〔縦線〕 配置：<行為>と<行為>の間<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/structure_of_action.png>  
 などの図形で表現する
 
 ## 介護における構造化マニュアルの例
@@ -15,14 +15,15 @@
 公開するデータセット：  
 * 介護における構造化マニュアルの例の一部（PDF）  
 * 介護における構造化マニュアルの例（RDF）  
+<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/statistical_information.png>
 
 ## 介護における構造化マニュアルの例（PDF）
 介護における構造化マニュアルの例を図形表現で示したもの．
-下図に一部を示す．
+下図に一部を示す．  
+<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/eat_something.png>
 
 ## 介護における構造化マニュアルの例（RDF）
 介護における構造化マニュアルの例をResource Description Frameworkに則って記述したものである．
-下図に一部を示す．
 
 ## データセットの作成過程（沿革）
 [1][2]をもとに介護における構造化マニュアルの例を作成開始した．・・・A  
