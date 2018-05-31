@@ -1,0 +1,2 @@
+# Example_of_structured_manuals_for_elderly_care
+介護の構造化マニュアルの例
