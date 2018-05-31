@@ -12,13 +12,13 @@ The data-set is provided "as is", without warranty of any kind, express or impli
 ### Acknowledgement
 “Example of structured manuals in elderly care” are partially based on results obtained from a project commissioned by the New Energy and Industrial Technology Development Organization (NEDO).  
 “Example of structured manuals in elderly care” are developed by referring to following textbooks and also according to discussion with some of the experts of elderly care services.   
-  平舘綾子: ホームヘルパー講座2級課程テキスト1福祉・介護の知識と方法, ニチイ学館(2012)  
-  平舘綾子: ホームヘルパー講座2級課程テキスト2介護の実際, ニチイ学館(2012)  
-  大田仁史, 三好春樹: 完全図解　新しい介護, 講談社, 東田 勉(編集), (2014)  
-  初任者研修テキストブック編集委員会(編集), 介護職員初任者研修テキスト,ミネルヴァ書房, (2016)  
-  社団法人日本介護福祉士養成施設協会, 介護福祉国家試験・実技試験免除のための介護技術講習テキスト, (2005)  
+　　平舘綾子: ホームヘルパー講座2級課程テキスト1福祉・介護の知識と方法, ニチイ学館(2012)  
+　　平舘綾子: ホームヘルパー講座2級課程テキスト2介護の実際, ニチイ学館(2012)  
+　　大田仁史, 三好春樹: 完全図解　新しい介護, 講談社, 東田 勉(編集), (2014)  
+　　初任者研修テキストブック編集委員会(編集), 介護職員初任者研修テキスト,ミネルヴァ書房, (2016)  
+　　社団法人日本介護福祉士養成施設協会, 介護福祉国家試験・実技試験免除のための介護技術講習テキスト, (2005)  
 
-### Creator
+### Creators
 Satoshi Nishimura and Service Intelligence Research Team,  
 Artificial Intelligence Research Center,  
 National Institute of Advanced Industrial Science and Technology, Japan
