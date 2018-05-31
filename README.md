@@ -60,75 +60,73 @@ Aと[3][4][5]及び当チームの介護専門家の経験をもとに，介護�
 	* その際には，Property, Classを追加，削除，変更を行う．
 
 ## （参考）SPARQLクエリ例
-'''sparql
-///ルートノード検索///
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX sm: <http://coto.pj.aist.go.jp/ontologies/structured-manual/>
-PREFIX ont: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>
-PREFIX act: <http://coto.pj.aist.go.jp/ontologies/structured-manual/Action/>
-
-SELECT * WHERE {
-  ?s a ont:Action.
-
-  filter not exists {
-    ?s ont:Achieve ?text.
-  }
-}
-
-
-///ある文字列(移乗)を含む行為の一覧///
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX sm: <http://coto.pj.aist.go.jp/ontologies/structured-manual/>
-PREFIX ont: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>
-PREFIX act: <http://coto.pj.aist.go.jp/ontologies/structured-manual/Action/>
-
-SELECT ?label WHERE {
-  ?action a ont:Action.
-  ?action rdfs:label ?label.
-
-  filter regex(?label, "移乗")
-}
-
-///順序関係がある方法とその方法で達成する目的///
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX smp: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>
-
-SELECT ?GoalLabel ?WayLabel
-	WHERE {
-		?Action a smp:Action.
-		?Action smp:Achieve ?Way.
-		?Way smp:Order ?Next.
-		?Action rdfs:label ?GoalLabel.
-		?Way rdfs:label ?WayLabel.
-		?Next rdfs:label ?NextLabel.
-}
-
-///利用者のする行為///
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX smp: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>
-
-SELECT ?ActionLabel
-	WHERE {
-		?Action a smp:Action.
-		?Action smp:hasActor ?Actor.
-		?Action rdfs:label ?ActionLabel.
-
-		filter regex(?Actor, "利用者")
-}
-'''
+///ルートノード検索///  
+  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX owl: <http://www.w3.org/2002/07/owl#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX sm: <http://coto.pj.aist.go.jp/ontologies/structured-manual/>  
+PREFIX ont: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>  
+PREFIX act: <http://coto.pj.aist.go.jp/ontologies/structured-manual/Action/>  
+  
+SELECT * WHERE {  
+  ?s a ont:Action.  
+  
+  filter not exists {  
+    ?s ont:Achieve ?text.  
+  }  
+}  
+  
+  
+///ある文字列(移乗)を含む行為の一覧///  
+  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX owl: <http://www.w3.org/2002/07/owl#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX sm: <http://coto.pj.aist.go.jp/ontologies/structured-manual/>  
+PREFIX ont: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>  
+PREFIX act: <http://coto.pj.aist.go.jp/ontologies/structured-manual/Action/>  
+  
+SELECT ?label WHERE {  
+  ?action a ont:Action.  
+  ?action rdfs:label ?label.  
+  
+  filter regex(?label, "移乗")  
+}  
+  
+///順序関係がある方法とその方法で達成する目的///  
+  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX owl: <http://www.w3.org/2002/07/owl#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX smp: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>  
+  
+SELECT ?GoalLabel ?WayLabel  
+	WHERE {  
+		?Action a smp:Action.  
+		?Action smp:Achieve ?Way.  
+		?Way smp:Order ?Next.  
+		?Action rdfs:label ?GoalLabel.  
+		?Way rdfs:label ?WayLabel.  
+		?Next rdfs:label ?NextLabel.  
+}  
+  
+///利用者のする行為///  
+  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX owl: <http://www.w3.org/2002/07/owl#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX smp: <http://coto.pj.aist.go.jp/ontologies/structured-manual#>  
+  
+SELECT ?ActionLabel  
+	WHERE {  
+		?Action a smp:Action.  
+		?Action smp:hasActor ?Actor.  
+		?Action rdfs:label ?ActionLabel.  
+  
+		filter regex(?Actor, "利用者")  
+}  
