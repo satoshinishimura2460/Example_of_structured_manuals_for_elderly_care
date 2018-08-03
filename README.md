@@ -7,7 +7,9 @@
 A structured manual is a kind of procedural manual which represents a goal and required actions to realize the goal by rectangle nodes and links among them.
 Examples:
 <action> is described by〔rounded rectangle〕with a string〔noun + verb〕<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/unit_of_action_en.png>  
+	
 <actor> is described by〔orange rectangle〕on the upper left of <action><img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/actor_en.png>
+	
 <achievement relation> is described by 〔vertical line〕between <action> and <action><img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/structure_of_actions_en.png>  
 
 ## Example of structured manuals for elderly care
