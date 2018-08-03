@@ -1,6 +1,37 @@
 # Example_of_structured_manuals_for_elderly_care
 介護の構造化マニュアルの例
 
+日本語の説明は下にあります．
+
+## What is a Structured Manual
+A structured manual is a kind of procedural manual which represents a goal and required actions to realize the goal by rectangle nodes and links among them.
+Examples:
+<action> is described by〔rounded rectangle〕with a string〔noun + verb〕<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/unit_of_action_en.png>  
+<actor> is described by〔orange rectangle〕on the upper left of <action><img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/actor_en.png>
+<achievement relation> is described by 〔vertical line〕between <action> and <action><img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/structure_of_actions_en.png>  
+
+## Example of structured manuals for elderly care
+The table denotes a statistic information about the Example_of_structured_manuals_for_elderly_care.
+The dataset contains eight kinds of care actions. Each action contains common actions among care facilities.
+There are two types of dataset: 
+* an example of visualization of the Example_of_structured_manuals_for_elderly_care (PDF) (only in Japanese)
+* the Example_of_structured_manuals_for_elderly_care (RDF) (English label is under developping)
+<img src=https://raw.githubusercontent.com/satoshinishimura2460/Example_of_structured_manuals_for_elderly_care/master/img_readme/statistical_information_en.png>
+
+You can try some SPARQL queries as shown in the botom of this page.
+
+## Publication
+Nishimura, S., et al.: Trial to RDFize Structured Manual for Care Processes, SIG-SWO-44-11 (2018), pp. 1-4. in Japanese.
+
+## References
+These are textbooks about elderly care processes to construct the Example_of_structured_manuals_for_elderly_care.
+  [1] 平舘綾子: ホームヘルパー講座2級課程テキスト1福祉・介護の知識と方法, ニチイ学館(2012)，  
+  [2] 平舘綾子: ホームヘルパー講座2級課程テキスト2介護の実際, ニチイ学館(2012)  
+  [3] 大田仁史, 三好春樹: 完全図解　新しい介護, 講談社, 東田 勉(編集), (2014)  
+  [4] 初任者研修テキストブック編集委員会(編集), 介護職員初任者研修テキスト,ミネルヴァ書房, (2016)  
+  [5]社団法人日本介護福祉士養成施設協会, 介護福祉国家試験・実技試験免除のための介護技術講習テキスト, (2005)  
+
+
 ## 構造化マニュアルとは
 達成したい目的に向けて必要な行為とその関係を整理し、線や四角などの図形を用いて表現した業務手順書である。  
 例えば  
@@ -65,8 +96,9 @@ Aと[3][4][5]及び当チームの介護専門家の経験をもとに，介護�
 西村悟史, et al. "介護業務マニュアルの RDF 化の試み." 人工知能学会研究会資料 44.11 (2018): 1-4.
 
 ## （参考）SPARQLクエリ例
+## Examples of queries in SPARQL
 ```
-///ルートノード検索///  
+///ルートノード検索///  ///Search for root node of the structured manuals///
   
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
 PREFIX owl: <http://www.w3.org/2002/07/owl#>  
@@ -85,7 +117,7 @@ SELECT * WHERE {
 }  
   
   
-///ある文字列(移乗)を含む行為の一覧///  
+///ある文字列(移乗)を含む行為の一覧///  ///Extracting a list of actions which include specific characters.///
   
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
 PREFIX owl: <http://www.w3.org/2002/07/owl#>  
@@ -102,7 +134,7 @@ SELECT ?label WHERE {
   filter regex(?label, "移乗")  
 }  
   
-///順序関係がある方法とその方法で達成する目的///  
+///順序関係がある方法とその方法で達成する目的///  ///Extracting a list of goal actions which constitutes by actions which has sm:Order relation.///
   
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
 PREFIX owl: <http://www.w3.org/2002/07/owl#>  
@@ -120,7 +152,7 @@ SELECT ?GoalLabel ?WayLabel
 		?Next rdfs:label ?NextLabel.  
 }  
   
-///利用者のする行為///  
+///利用者のする行為///  ///Extracting a list of actions taken by an elderly person///
   
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
 PREFIX owl: <http://www.w3.org/2002/07/owl#>  
