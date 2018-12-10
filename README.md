@@ -22,6 +22,7 @@ You can try some SPARQL queries as shown in the botom of this page.
 
 ## Publication
 Nishimura, S., et al.: Trial to RDFize Structured Manual for Care Processes, SIG-SWO-44-11 (2018), pp. 1-4. in Japanese.
+Nishimura, S., et al.: Building Structured Manuals for Elderly Careas a Computer Interpretable Knowledge Resource, The 8th Joint International Semantic Technology Conference (JIST2018) Poster and Demo, 4 pages. (2018)
 
 ## References
 These are textbooks about elderly care processes to construct the Example_of_structured_manuals_for_elderly_care.
@@ -94,6 +95,7 @@ Aと[3][4][5]及び当チームの介護専門家の経験をもとに，介護�
 ## 研究発表
 福田賢一郎, 西村悟史, SNSを活用して業務マニュアルを更新する方法を開発, http://www.aist.go.jp/aist_j/press_release/pr2017/pr20170906/pr20170906.html#a  
 西村悟史, et al. "介護業務マニュアルの RDF 化の試み." 人工知能学会研究会資料 44.11 (2018): 1-4.
+Nishimura, S., et al.: Building Structured Manuals for Elderly Careas a Computer Interpretable Knowledge Resource, The 8th Joint International Semantic Technology Conference (JIST2018) Poster and Demo, 4 pages. (2018)
 
 ## （参考）SPARQLクエリ例
 ## Examples of queries in SPARQL
